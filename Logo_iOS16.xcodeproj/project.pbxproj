@@ -13,6 +13,9 @@
 		5AF432A82447AB9F000454EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF432A62447AB9F000454EE /* Main.storyboard */; };
 		5AF432AA2447ABA0000454EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AF432A92447ABA0000454EE /* Assets.xcassets */; };
 		5AF432AD2447ABA0000454EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF432AB2447ABA0000454EE /* LaunchScreen.storyboard */; };
+		5AF432B72447BA29000454EE /* StopLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF432B62447BA29000454EE /* StopLogoView.swift */; };
+		5AF432B92447C854000454EE /* SlowLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF432B82447C854000454EE /* SlowLogoView.swift */; };
+		5AF432BB2447C8B3000454EE /* GoLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF432BA2447C8B3000454EE /* GoLogoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		5AF432A92447ABA0000454EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AF432AC2447ABA0000454EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AF432AE2447ABA0000454EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AF432B62447BA29000454EE /* StopLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopLogoView.swift; sourceTree = "<group>"; };
+		5AF432B82447C854000454EE /* SlowLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowLogoView.swift; sourceTree = "<group>"; };
+		5AF432BA2447C8B3000454EE /* GoLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoLogoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +62,13 @@
 		5AF4329F2447AB9F000454EE /* Logo_iOS16 */ = {
 			isa = PBXGroup;
 			children = (
+				5AF432B62447BA29000454EE /* StopLogoView.swift */,
 				5AF432A02447AB9F000454EE /* AppDelegate.swift */,
 				5AF432A22447AB9F000454EE /* SceneDelegate.swift */,
 				5AF432A42447AB9F000454EE /* ViewController.swift */,
 				5AF432A62447AB9F000454EE /* Main.storyboard */,
+				5AF432B82447C854000454EE /* SlowLogoView.swift */,
+				5AF432BA2447C8B3000454EE /* GoLogoView.swift */,
 				5AF432A92447ABA0000454EE /* Assets.xcassets */,
 				5AF432AB2447ABA0000454EE /* LaunchScreen.storyboard */,
 				5AF432AE2447ABA0000454EE /* Info.plist */,
@@ -139,8 +148,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AF432A52447AB9F000454EE /* ViewController.swift in Sources */,
+				5AF432B72447BA29000454EE /* StopLogoView.swift in Sources */,
 				5AF432A12447AB9F000454EE /* AppDelegate.swift in Sources */,
 				5AF432A32447AB9F000454EE /* SceneDelegate.swift in Sources */,
+				5AF432B92447C854000454EE /* SlowLogoView.swift in Sources */,
+				5AF432BB2447C8B3000454EE /* GoLogoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
