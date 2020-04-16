@@ -15,20 +15,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="pgT-Ph-Ecl">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="pgT-Ph-Ecl">
                                 <rect key="frame" x="107" y="106" width="200" height="698"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbY-05-Ppz" customClass="StopLogoView" customModule="Logo_iOS16" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="169"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1O-Ed-ZCt">
+                                                <rect key="frame" x="0.0" y="-15.5" width="200" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="OrY-sZ-3Iy"/>
+                                                    <constraint firstAttribute="height" constant="200" id="cdF-Ph-KaO"/>
+                                                </constraints>
+                                                <state key="normal" title="Stop">
+                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="stopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rni-FY-eFu"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Y1O-Ed-ZCt" firstAttribute="centerX" secondItem="bbY-05-Ppz" secondAttribute="centerX" id="SqL-ic-idf"/>
+                                            <constraint firstItem="Y1O-Ed-ZCt" firstAttribute="centerY" secondItem="bbY-05-Ppz" secondAttribute="centerY" id="YcH-7W-4c3"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MVS-9r-z24" customClass="SlowLogoView" customModule="Logo_iOS16" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="249" width="200" height="200"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLf-st-Dsu">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="AfW-fB-Edz"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="LNC-FX-upt"/>
+                                                </constraints>
+                                                <state key="normal" title="Slow">
+                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="slowButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TyQ-wx-rfe"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="JLf-st-Dsu" firstAttribute="centerY" secondItem="MVS-9r-z24" secondAttribute="centerY" id="1CS-FU-ym6"/>
+                                            <constraint firstItem="JLf-st-Dsu" firstAttribute="centerX" secondItem="MVS-9r-z24" secondAttribute="centerX" id="Nhd-ar-1HF"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jNz-GU-zKv" customClass="GoLogoView" customModule="Logo_iOS16" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="498" width="200" height="200"/>
+                                        <rect key="frame" x="0.0" y="529" width="200" height="169"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdQ-7v-Tvw">
+                                                <rect key="frame" x="0.0" y="-15.5" width="200" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="8dv-PN-qrX"/>
+                                                    <constraint firstAttribute="height" constant="200" id="oNs-8s-Kig"/>
+                                                </constraints>
+                                                <state key="normal" title="Go">
+                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="goButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cf6-fa-fN1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="qdQ-7v-Tvw" firstAttribute="centerX" secondItem="jNz-GU-zKv" secondAttribute="centerX" id="2Xx-os-FNv"/>
+                                            <constraint firstItem="qdQ-7v-Tvw" firstAttribute="centerY" secondItem="jNz-GU-zKv" secondAttribute="centerY" id="G1o-ug-zti"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -36,20 +93,35 @@
                                     <constraint firstItem="MVS-9r-z24" firstAttribute="centerY" secondItem="pgT-Ph-Ecl" secondAttribute="centerY" id="iUM-tW-Hph"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXd-GC-V9m">
+                                <rect key="frame" x="20" y="824" width="374" height="30"/>
+                                <state key="normal" title="Press"/>
+                                <connections>
+                                    <action selector="pressButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8tC-nN-XVN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.80956535532994922" green="0.58848776624361765" blue="0.18325245178458088" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lXd-GC-V9m" secondAttribute="trailing" constant="20" id="3sJ-5d-906"/>
                             <constraint firstItem="pgT-Ph-Ecl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="Ebc-c5-Xku"/>
                             <constraint firstItem="pgT-Ph-Ecl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="Mem-We-j7i"/>
+                            <constraint firstItem="lXd-GC-V9m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aWY-TQ-X9y"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pgT-Ph-Ecl" secondAttribute="bottom" constant="58" id="bhD-yp-W9c"/>
                             <constraint firstItem="pgT-Ph-Ecl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h9w-T1-u3H"/>
+                            <constraint firstItem="lXd-GC-V9m" firstAttribute="top" secondItem="pgT-Ph-Ecl" secondAttribute="bottom" constant="20" id="lTF-He-dXK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="goView" destination="jNz-GU-zKv" id="ard-th-WkB"/>
+                        <outlet property="slowView" destination="MVS-9r-z24" id="xCO-e2-PBt"/>
+                        <outlet property="stopView" destination="bbY-05-Ppz" id="lKd-lk-L5s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="138"/>
+            <point key="canvasLocation" x="185.50724637681162" y="9.375"/>
         </scene>
     </scenes>
 </document>

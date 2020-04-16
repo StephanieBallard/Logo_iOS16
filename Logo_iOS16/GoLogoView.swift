@@ -35,3 +35,5 @@ class GoLogoView: UIView {
     }
 
 }
+
+
